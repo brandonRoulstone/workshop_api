@@ -14,7 +14,6 @@ const getTicket = async (venueId) => {
     );
     return ticket;
 }
-console.log(await getTicket(1))
 
 const bookTicket = async (venueId) => {
     const [ ticket ] = await pool.query(

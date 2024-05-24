@@ -11,7 +11,7 @@ const PORT = process.env.MYSQL_ADDON_PORT;
 
 app.use(express.static('./Static'));
 app.use(cors({
-    origin: 'http://localhost:8080', // reminder update this to https://sharenet-theta.vercel.app/
+    origin: 'https://sharenet-theta.vercel.app',
     credentials: true
 }))
 
