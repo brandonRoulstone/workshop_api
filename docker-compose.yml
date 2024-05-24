@@ -1,0 +1,15 @@
+version: '26.1.1'
+services:
+  web:
+    build: .
+    ports:
+      - "3680:3680"
+  db:
+    image: "mysql"
+    enviroment:
+      MYSQL_ROOT_PASSWORD: WdTyIHo9JMRrcUZIC04a
+    volumes: 
+      - db-data:/foo
+
+volumes:
+  db-data:
