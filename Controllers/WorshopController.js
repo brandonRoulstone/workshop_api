@@ -12,7 +12,7 @@ export default {
     },
     selectTicketByID: async (req, res) => {
         try {
-            const { id } = +req.params;
+            const id = +req.params.id;
             res.send(await getTicket(id))
         } catch (error) {
             res.status(404).json({
